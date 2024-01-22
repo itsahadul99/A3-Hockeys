@@ -46,7 +46,7 @@
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
-                <div tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <div tabindex="0" class="menu menu-sm dropdown-content mt-0 z-[1] p-2 rounded-box w-52">
                     <a class=" text-third hover:text-third duration-300" href="#">Home</a>
                 <a class=" text-[#424247] hover:text-third duration-300" href="#">About</a>
                 <a class=" text-[#424247] hover:text-third duration-300" href="#">Pages</a>
@@ -77,9 +77,8 @@
         <!-- Navigation bar end here -->
         <!-- Banner section start here -->
         <section>
-            <div class="carousel w-full mt-5 lg:mt-14">
+            <div class="carousel w-full mt-5 lg:mt-14 relative">
                 <div id="slide1" class="carousel-item relative w-full rounded-xl h-[100%]">
-                    
                   <img src="./Images/1.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a> 
@@ -93,14 +92,60 @@
                     <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
-              </div>
-              <!-- <div class="w-full lg:w-[650px] bg-black absolute lg:right-24 lg:px-3 py-2 lg:py-2 rounded-md lg:rounded-2xl lg:-bottom-[8.5rem] space-y-4">
+              <!-- <div class="w-full lg:w-[650px] bg-black absolute lg:right-24 lg:px-3 py-0 lg:py-2 rounded-md lg:rounded-2xl lg:bottom-[4.5rem] space-y-4">
                 <h3 class="font-extrabold text-white text-lg lg:text-2xl">Meet all the heroes from the field</h3>
-                <p class="font-medium text-[#FFFFFF99] text-sm">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <p class="font-medium text-[#FFFFFF99] text-sm">Meet our all heroes and increase your skills. Make your community big and introduced yourself to all.</p>
               </div> -->
+            </div>
         </section>
         <!-- Banner section end here  -->
     </header>
+    <main class="container mx-auto my-5">
+        <!-- Professional hockeys club section start here -->
+        <section class=" mt-5 lg:mt-10">
+            <h1 class="text-primary text-center text-4xl font-extrabold">Professional Hockeys Club</h1>
+            <p class="text-secondary font-medium text-center flex justify-center pt-6">We have professional hockeys club. We have professional coach stuff, two big ground and other facilaties.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-4 justify-center mt-10">
+                    <div class="flex flex-col justify-center items-center space-y-6 gap-5">
+                        <div class="radial-progress text-red-400" style="--value:90;--size:6rem;" role="progressbar">
+                            <h3 class="text-black font-bold text-2xl ">90%</h3>
+                        </div>
+                        <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                        <p class="text-secondary font-normal text-center w-3/4">
+                            We have a Prayer Facility. You can do your five times prayer.
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center space-y-6">
+                        <div class="radial-progress text-green-400" style="--value:90;--size:6rem;" role="progressbar">
+                            <h3 class="text-black font-bold text-2xl ">90%</h3>
+                        </div>
+                        <h3 class="text-xl font-semibold">Experienced Coach</h3>
+                        <p class="text-secondary font-normal text-center w-3/4">
+                            We have a many experienced coach. You can learn a lots from them.
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center space-y-6">
+                        <div class="radial-progress text-amber-400" style="--value:90;--size:6rem;" role="progressbar">
+                            <h3 class="text-black font-bold text-2xl ">90%</h3>
+                        </div>
+                        <h3 class="text-xl font-semibold">Senior Player</h3>
+                        <p class="text-secondary font-normal text-center w-3/4">
+                            Our senior player helps you to develop your skills.
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center space-y-6">
+                        <div class="radial-progress text-sky-400" style="--value:90;--size:6rem;" role="progressbar">
+                            <h3 class="text-black font-bold text-2xl ">90%</h3>
+                        </div>
+                        <h3 class="text-xl font-semibold">Training Ground</h3>
+                        <p class="text-secondary font-normal text-center w-3/4">
+                            We have many training ground . At a time our all player can trained.
+                        </p>
+                    </div>
+            </div>
+        </section>
+        <!-- Professional hockeys club section end here -->
+    </main>
 </body>
 
 </html>
