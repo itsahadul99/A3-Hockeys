@@ -11,27 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700;800&display=swap"
         rel="stylesheet">
     <!-- Font awesome cdn link here -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- daisy UI cdn link here -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind custom color -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary: '#131318',
-                secondary:'#131313',
-                third:'#FF4240',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#131318',
+                        secondary: '#131313',
+                        third: '#FF4240',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <!-- Custom font  -->
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
@@ -42,35 +44,41 @@
         <!-- Navigation bar start here -->
         <nav class="navbar">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <div tabindex="0" class="menu menu-sm dropdown-content mt-0 z-[1] p-2 rounded-box w-52">
+                        <a class=" text-third hover:text-third duration-300" href="#">Home</a>
+                        <a class=" text-[#424247] hover:text-third duration-300" href="#">About</a>
+                        <a class=" text-[#424247] hover:text-third duration-300" href="#">Pages</a>
+                        <a class="text-[#424247] hover:text-third duration-300" href="#">Blog</a>
+                        <a class="text-[#424247] hover:text-third duration-300" href="#">Contact</a>
+                    </div>
                 </div>
-                <div tabindex="0" class="menu menu-sm dropdown-content mt-0 z-[1] p-2 rounded-box w-52">
-                    <a class=" text-third hover:text-third duration-300" href="#">Home</a>
-                <a class=" text-[#424247] hover:text-third duration-300" href="#">About</a>
-                <a class=" text-[#424247] hover:text-third duration-300" href="#">Pages</a>
-                <a class="text-[#424247] hover:text-third duration-300" href="#">Blog</a>
-                <a class="text-[#424247] hover:text-third duration-300" href="#">Contact</a>
+                <div>
+                    <h1 class="text-primary text-xl lg:text-4xl font-extrabold">Hockey<span
+                            class="text-third font-extrabold text-xl lg:text-4xl">’</span>s</h1>
                 </div>
-              </div>
-              <div>
-                <h1 class="text-primary text-xl lg:text-4xl font-extrabold">Hockey<span class="text-third font-extrabold text-xl lg:text-4xl">’</span>s</h1>
-              </div>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <div class="menu menu-horizontal px-1 space-x-10">
-                <a class=" text-third hover:text-third duration-300" href="#">Home</a>
-                <a class=" text-[#424247] hover:text-third duration-300" href="#">About</a>
-                <a class=" text-[#424247] hover:text-third duration-300" href="#">Pages</a>
-                <a class="text-[#424247] hover:text-third duration-300" href="#">Blog</a>
-                <a class="text-[#424247] hover:text-third duration-300" href="#">Contact</a>
-              </div>
+                <div class="menu menu-horizontal px-1 space-x-10">
+                    <a class=" text-third hover:text-third duration-300" href="#">Home</a>
+                    <a class=" text-[#424247] hover:text-third duration-300" href="#">About</a>
+                    <a class=" text-[#424247] hover:text-third duration-300" href="#">Pages</a>
+                    <a class="text-[#424247] hover:text-third duration-300" href="#">Blog</a>
+                    <a class="text-[#424247] hover:text-third duration-300" href="#">Contact</a>
+                </div>
             </div>
             <div class="navbar-end space-x-5 items-center">
                 <div class="flex items-center justify-center gap-6">
                     <img class="cursor-pointer hidden lg:flex" src="./Images/Frame (1).png" alt="">
-                    <a class=" py-2 lg:py-3 cursor-pointer rounded-lg bg-third text-white px-3 lg:px-4 font-bold">Get Ticket</a>
+                    <a class=" py-2 lg:py-3 cursor-pointer rounded-lg bg-third text-white px-3 lg:px-4 font-bold">Get
+                        Ticket</a>
                 </div>
             </div>
         </nav>
@@ -79,20 +87,20 @@
         <section>
             <div class="carousel w-full mt-5 lg:mt-14 relative">
                 <div id="slide1" class="carousel-item relative w-full rounded-xl h-[100%]">
-                  <img src="./Images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
                 <div id="slide2" class="carousel-item relative w-full h-[80%] rounded-xl">
-                  <img src="./Images/1.png" class="w-full h-[80%]" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-              <!-- <div class="w-full lg:w-[650px] bg-black absolute lg:right-24 lg:px-3 py-0 lg:py-2 rounded-md lg:rounded-2xl lg:bottom-[4.5rem] space-y-4">
+                    <img src="./Images/1.png" class="w-full h-[80%]" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- <div class="w-full lg:w-[650px] bg-black absolute lg:right-24 lg:px-3 py-0 lg:py-2 rounded-md lg:rounded-2xl lg:bottom-[4.5rem] space-y-4">
                 <h3 class="font-extrabold text-white text-lg lg:text-2xl">Meet all the heroes from the field</h3>
                 <p class="font-medium text-[#FFFFFF99] text-sm">Meet our all heroes and increase your skills. Make your community big and introduced yourself to all.</p>
               </div> -->
@@ -103,48 +111,261 @@
     <main class="container mx-auto my-5">
         <!-- Professional hockeys club section start here -->
         <section class=" mt-5 lg:mt-10">
-            <h1 class="text-primary text-center text-4xl font-extrabold">Professional Hockeys Club</h1>
-            <p class="text-secondary font-medium text-center flex justify-center pt-6">We have professional hockeys club. We have professional coach stuff, two big ground and other facilaties.</p>
+            <h1 class="text-primary text-center text-2xl lg:text-4xl font-extrabold">Professional Hockeys Club</h1>
+            <p class="text-secondary font-medium text-center flex justify-center pt-6 w-full lg:w-1/3 mx-auto">We have
+                professional hockeys
+                club. We have professional coach stuff, two big ground and other facilities.</p>
             <div class="grid grid-cols-1 lg:grid-cols-4 justify-center mt-10">
-                    <div class="flex flex-col justify-center items-center space-y-6 gap-5">
-                        <div class="radial-progress text-red-400" style="--value:90;--size:6rem;" role="progressbar">
-                            <h3 class="text-black font-bold text-2xl ">90%</h3>
-                        </div>
-                        <h3 class="text-xl font-semibold">Prayer Facility</h3>
-                        <p class="text-secondary font-normal text-center w-3/4">
-                            We have a Prayer Facility. You can do your five times prayer.
-                        </p>
+                <div class="flex flex-col justify-center items-center space-y-6 gap-5">
+                    <div class="radial-progress text-red-400" style="--value:90;--size:6rem;" role="progressbar">
+                        <h3 class="text-black font-bold text-2xl ">90%</h3>
                     </div>
-                    <div class="flex flex-col justify-center items-center space-y-6">
-                        <div class="radial-progress text-green-400" style="--value:90;--size:6rem;" role="progressbar">
-                            <h3 class="text-black font-bold text-2xl ">90%</h3>
-                        </div>
-                        <h3 class="text-xl font-semibold">Experienced Coach</h3>
-                        <p class="text-secondary font-normal text-center w-3/4">
-                            We have a many experienced coach. You can learn a lots from them.
-                        </p>
+                    <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                    <p class="text-secondary font-normal text-center w-3/4">
+                        We have a Prayer Facility. You can do your five times prayer.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-6">
+                    <div class="radial-progress text-green-400" style="--value:90;--size:6rem;" role="progressbar">
+                        <h3 class="text-black font-bold text-2xl ">90%</h3>
                     </div>
-                    <div class="flex flex-col justify-center items-center space-y-6">
-                        <div class="radial-progress text-amber-400" style="--value:90;--size:6rem;" role="progressbar">
-                            <h3 class="text-black font-bold text-2xl ">90%</h3>
-                        </div>
-                        <h3 class="text-xl font-semibold">Senior Player</h3>
-                        <p class="text-secondary font-normal text-center w-3/4">
-                            Our senior player helps you to develop your skills.
-                        </p>
+                    <h3 class="text-xl font-semibold">Experienced Coach</h3>
+                    <p class="text-secondary font-normal text-center w-3/4">
+                        We have a many experienced coach. You can learn a lots from them.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-6">
+                    <div class="radial-progress text-amber-400" style="--value:90;--size:6rem;" role="progressbar">
+                        <h3 class="text-black font-bold text-2xl ">90%</h3>
                     </div>
-                    <div class="flex flex-col justify-center items-center space-y-6">
-                        <div class="radial-progress text-sky-400" style="--value:90;--size:6rem;" role="progressbar">
-                            <h3 class="text-black font-bold text-2xl ">90%</h3>
-                        </div>
-                        <h3 class="text-xl font-semibold">Training Ground</h3>
-                        <p class="text-secondary font-normal text-center w-3/4">
-                            We have many training ground . At a time our all player can trained.
-                        </p>
+                    <h3 class="text-xl font-semibold">Senior Player</h3>
+                    <p class="text-secondary font-normal text-center w-3/4">
+                        Our senior player helps you to develop your skills.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center space-y-6">
+                    <div class="radial-progress text-sky-400" style="--value:90;--size:6rem;" role="progressbar">
+                        <h3 class="text-black font-bold text-2xl ">90%</h3>
                     </div>
+                    <h3 class="text-xl font-semibold">Training Ground</h3>
+                    <p class="text-secondary font-normal text-center w-3/4">
+                        We have many training ground . At a time our all player can trained.
+                    </p>
+                </div>
             </div>
         </section>
         <!-- Professional hockeys club section end here -->
+        <!-- Program section start here -->
+       <section class=" mt-5 lg:mt-10">
+            <h1 class="text-primary text-center text-2xl lg:text-4xl font-extrabold">Program Sections</h1>
+            <p class="text-secondary font-medium text-center flex justify-center pt-6 w-full lg:w-1/3 mx-auto">We have play various programs. Which makes a player more attentive and keeps more fit. </p>
+            <div class="mt-5 lg:mt-20">
+                <div class="flex flex-col lg:flex-row justify-center items-center gap-6 text-white">
+                    <div class="relative ">
+                        <img src="./Images/2.png" alt="">
+                        <div class="absolute top-5 lg:top-24 left-10 space-y-5">
+                            <h1 class="font-bold text-xl lg:text-3xl">Junior Program</h1>
+                            <p class="font-medium w-11/12">This program only for our junior players. By this program our junior player strong their understanding between them and makes them more powerful.</p>
+                            <button class="bg-third py-2 px-5 rounded-lg border border-third">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./Images/3.png" alt="">
+                        <div class="absolute top-5 lg:top-24 left-10 space-y-5">
+                            <h1 class="font-bold text-xl lg:text-3xl">Junior Program</h1>
+                            <p class="font-medium text-gray-100 w-11/12">This program only for our junior players. By this program our junior player strong their understanding between them and makes them more powerful.</p>
+                            <button class="bg-third py-2 px-5 rounded-lg border border-third">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 flex justify-center relative text-white ">
+                    <img class="" src="./Images/4.png" alt="">
+                    <div class="absolute top-5 lg:top-52 left-10 lg:left-56  spac-y-0 lg:space-y-5">
+                        <h1 class="font-bold text-sm lg:text-3xl">Junior Program</h1>
+                        <p class="font-medium text-xs lg:text-lg w-11/12 lg:w-8/12">This program only for our junior players. By this program our junior player strong their understanding between them and makes them more powerful.</p>
+                        <button class="bg-third py-2 px-5 rounded-lg border border-third">Register Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </section> 
+        <!-- Program section end here -->
+        <!-- Our new products section -->
+        <section class=" mt-8 lg:mt-10">
+            <h1 class="text-primary text-center text-2xl lg:text-4xl font-extrabold">Our New Products</h1>
+            <p class="text-secondary font-medium text-center flex justify-center pt-6 w-full lg:w-1/3 mx-auto">Here's
+                our new products list with our customers review and ratings. You can buy this product from here and see.
+            </p>
+            <div class="mt-7 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 grid-rows-1 lg:grid-rows-3 gap-5">
+                <div
+                    class="flex flex-col lg:flex-row gap-5 shadow-sm border-2 p-5 rounded-xl justify-center items-center">
+                    <div>
+                        <img class="w-full" src="./Images/5.png" alt="">
+                    </div>
+                    <div class="space-y-5">
+                        <div class="flex gap-3 justify-start items-center">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <div>
+                            <h1 class="mb-5 text-primary font-bold text-xl">Mens Winter Jacket</h1>
+                            <p class=" font-medium text-secondary w-full lg:w-2/3">This is the mens sports jacket.You
+                                can buy it from best price.</p>
+                        </div>
+                        <div class="flex gap-5 justify-start items-center">
+                            <p class="text-lg text-third font-bold">Price-$22.00</p>
+                            <i class="fa-solid fa-truck"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col lg:flex-row gap-5 shadow-sm border-2 p-5 rounded-xl justify-center items-center">
+                    <div>
+                        <img class="w-full" src="./Images/6.png" alt="">
+                    </div>
+                    <div class="space-y-5">
+                        <div class="flex gap-3 justify-start items-center">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <div>
+                            <h1 class="mb-5 text-primary font-bold text-xl">World Cup Flags Football</h1>
+                            <p class=" font-medium text-secondary w-full lg:w-2/3">This is the world cup official
+                                football .You can buy it from best price.</p>
+                        </div>
+                        <div class="flex gap-5 justify-start items-center">
+                            <p class="text-lg text-third font-bold">Price-$32.00</p>
+                            <i class="fa-solid fa-truck"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col lg:flex-row gap-5 shadow-sm border-2 p-5 rounded-xl justify-center items-center">
+                    <div>
+                        <img class="w-full" src="./Images/7.png" alt="">
+                    </div>
+                    <div class="space-y-5">
+                        <div class="flex gap-3 justify-start items-center">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <div>
+                            <h1 class="mb-5 text-primary font-bold text-xl">Yellow Cap</h1>
+                            <p class=" font-medium text-secondary w-full lg:w-2/3">This is a beautiful head cap .You can
+                                buy it from best price.</p>
+                        </div>
+                        <div class="flex gap-5 justify-start items-center">
+                            <p class="text-lg text-third font-bold">Price-$12.00</p>
+                            <i class="fa-solid fa-truck"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col lg:flex-row gap-5 shadow-sm border-2 p-5 rounded-xl justify-center items-center">
+                    <div>
+                        <img class="w-full" src="./Images/8.png" alt="">
+                    </div>
+                    <div class="space-y-5">
+                        <div class="flex gap-3 justify-start items-center">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <div>
+                            <h1 class="mb-5 text-primary font-bold text-xl">World Cup Jursey</h1>
+                            <p class=" font-medium text-secondary w-full lg:w-2/3">This is the world cup official
+                                jursey.You can buy it from best price.</p>
+                        </div>
+                        <div class="flex gap-5 justify-start items-center">
+                            <p class="text-lg text-third font-bold">Price-$15.00</p>
+                            <i class="fa-solid fa-truck"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col lg:flex-row gap-5 shadow-sm border-2 p-5 rounded-xl justify-center items-center">
+                    <div>
+                        <img class="w-full" src="./Images/9.png" alt="">
+                    </div>
+                    <div class="space-y-5">
+                        <div class="flex gap-3 justify-start items-center">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <div>
+                            <h1 class="mb-5 text-primary font-bold text-xl">Helmet</h1>
+                            <p class=" font-medium text-secondary w-full lg:w-2/3">This is the strong and beautiful
+                                helmet.You can buy it from best price.</p>
+                        </div>
+                        <div class="flex gap-5 justify-start items-center">
+                            <p class="text-lg text-third font-bold">Price-$22.00</p>
+                            <i class="fa-solid fa-truck"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col lg:flex-row gap-5 shadow-sm border-2 p-5 rounded-xl justify-center items-center">
+                    <div>
+                        <img class="w-full" src="./Images/10.png" alt="">
+                    </div>
+                    <div class="space-y-5">
+                        <div class="flex gap-3 justify-start items-center">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <p>5.0</p>
+                            <i class="fa-regular fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <div>
+                            <h1 class="mb-5 text-primary font-bold text-xl">World Cup Flags Football</h1>
+                            <p class=" font-medium text-secondary w-full lg:w-2/3">This is the world cup official
+                                football.You can buy it from best price.</p>
+                        </div>
+                        <div class="flex gap-5 justify-start items-center">
+                            <p class="text-lg text-third font-bold">Price-$22.00</p>
+                            <i class="fa-solid fa-truck"></i>
+                            <p>Delivery Fee : Free</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+
+        </section>
     </main>
 </body>
 
