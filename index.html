@@ -21,7 +21,9 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                primary: '#131318',
+                secondary:'#131313',
+                third:'#FF4240',
               }
             }
           }
@@ -36,8 +38,44 @@
 </head>
 
 <body class="font-manrope m-0 p-0">
-    <h1 class="font-bold">Testing.....</h1>
-
+    <header class="container mx-auto my-5">
+        <!-- Navigation bar start here -->
+        <nav class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <div tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <a class=" text-third hover:text-third duration-300" href="#">Home</a>
+                <a class=" text-[#424247] hover:text-third duration-300" href="#">About</a>
+                <a class=" text-[#424247] hover:text-third duration-300" href="#">Pages</a>
+                <a class="text-[#424247] hover:text-third duration-300" href="#">Blog</a>
+                <a class="text-[#424247] hover:text-third duration-300" href="#">Contact</a>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-primary text-xl lg:text-4xl font-extrabold">Hockey<span class="text-third font-extrabold text-xl lg:text-4xl">’</span>s</h1>
+              </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <div class="menu menu-horizontal px-1 space-x-10">
+                <a class=" text-third hover:text-third duration-300" href="#">Home</a>
+                <a class=" text-[#424247] hover:text-third duration-300" href="#">About</a>
+                <a class=" text-[#424247] hover:text-third duration-300" href="#">Pages</a>
+                <a class="text-[#424247] hover:text-third duration-300" href="#">Blog</a>
+                <a class="text-[#424247] hover:text-third duration-300" href="#">Contact</a>
+              </div>
+            </div>
+            <div class="navbar-end space-x-5 items-center">
+                <div class="flex items-center justify-center gap-6">
+                    <img class="cursor-pointer hidden lg:flex" src="./Images/Frame (1).png" alt="">
+                    <a class=" py-2 lg:py-3 cursor-pointer rounded-lg bg-third text-white px-3 lg:px-4 font-bold">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation bar end here -->
+    </header>
 </body>
 
 </html>
